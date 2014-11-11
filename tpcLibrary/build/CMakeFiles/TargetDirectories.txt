@@ -1,0 +1,3 @@
+C:/Projects/tpcStandalone/tpcLibrary/build/CMakeFiles/ALL_BUILD.dir
+C:/Projects/tpcStandalone/tpcLibrary/build/CMakeFiles/ZERO_CHECK.dir
+C:/Projects/tpcStandalone/tpcLibrary/build/CMakeFiles/tpcLibrary.dir

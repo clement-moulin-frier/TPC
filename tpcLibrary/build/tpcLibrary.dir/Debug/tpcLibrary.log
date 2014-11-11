@@ -1,0 +1,15 @@
+﻿Build started 21/07/2014 12:05:15.
+     1>Project "C:\Projects\tpcStandalone\tpcLibrary\build\tpcLibrary.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "tpcLibrary.dir\Debug\tpcLibrary.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Building Custom Rule C:/Projects/tpcStandalone/tpcLibrary/CMakeLists.txt
+         CMake does not need to re-run because C:\Projects\tpcStandalone\tpcLibrary\build\CMakeFiles\generate.stamp is up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "tpcLibrary.dir\Debug\tpcLibrary.unsuccessfulbuild".
+         Touching "tpcLibrary.dir\Debug\tpcLibrary.lastbuildstate".
+     1>Done Building Project "C:\Projects\tpcStandalone\tpcLibrary\build\tpcLibrary.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.07
