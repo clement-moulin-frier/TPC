@@ -16,7 +16,8 @@ callTpc::callTpc(string architecture,int x,int y,int z,int r,bool toroidal, stri
 	else{
 		tpcmatrix= new TpcMatrixPosition (x,y,z,r,torus,neighborhood);
 	}
-	recorder=new Recorder("C:\Projects\Rec");
+	// recorder=new Recorder("C:\Projects\Rec");
+	recorder=new Recorder("/home/clement/Documents/Boulot/SPECS/dev/TPC/rec");
 	vis = new Visualizer (*tpcmatrix);
 
 	status=-1;
@@ -854,8 +855,8 @@ void callTpc::process_position(string filename){
 
 	int count=1;
 
-	//string file_path= "C:/FinalBackup/recordings/shifts/vor/";
-	string file_path= "C:/FinalBackup/recordings/vor/";
+	//string file_path= "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/shifts/vor/";
+	string file_path= "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/vor/";
 
 
 	vector<string> files = read_directory(file_path);
@@ -892,8 +893,8 @@ void callTpc::process_position(string filename){
 		cout<<endl;
 	}
 	count=1;
-	//file_path = "C:/FinalBackup/recordings/shifts/wink/";
-	file_path = "C:/FinalBackup/recordings/wink/";
+	//file_path = "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/shifts/wink/";
+	file_path = "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/wink/";
 
 	status=0;
 	files= read_directory(file_path);
@@ -919,8 +920,8 @@ void callTpc::process_position(string filename){
 
 	}
 
-	//file_path = "C:/FinalBackup/recordings/shifts/P/";
-	file_path = "C:/FinalBackup/recordings/P/";
+	//file_path = "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/shifts/P/";
+	file_path = "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/P/";
 	status=0;
 	files= read_directory(file_path);
 	count=1;
@@ -944,8 +945,8 @@ void callTpc::process_position(string filename){
 
 	}
 
-	//file_path = "C:/FinalBackup/recordings/shifts/beugen/";
-	file_path = "C:/FinalBackup/recordings/beugen/";
+	//file_path = "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/shifts/beugen/";
+	file_path = "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/beugen/";
 	status=0;
 	files= read_directory(file_path);
 	count=1;
@@ -975,8 +976,8 @@ void callTpc::process_position(string filename){
 	
 
 	//    conceptualspace->cluster_single_linkage(4);
-	string pathname= "C:/FinalBackup/newdists/";
-	string cs_path = "C:/FinalBackup/newcs/";
+	string pathname= "/home/clement/Documents/Boulot/SPECS/dev/TPC/build/newdists/";
+	string cs_path = "/home/clement/Documents/Boulot/SPECS/dev/TPC/build/newcs/";
 	string shifts ="shifts_";
 	//pathname=pathname+shifts+filename;
 	pathname=pathname+filename;
@@ -1008,8 +1009,8 @@ void callTpc::process_vector(string filename){
 
 	int count=1;
 
-	string file_path= "C:/FinalBackup/recordings/vor/";
-	//string file_path= "C:/FinalBackup/recordings/shifts/vor/";
+	string file_path= "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/vor/";
+	//string file_path= "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/shifts/vor/";
 
 	//to load previously saved gestures
 	//string cs_load="C:/FinalBackup/newcs/";
@@ -1046,8 +1047,8 @@ void callTpc::process_vector(string filename){
 		cout<<endl;
 	}
 	count=1;
-	file_path = "C:/FinalBackup/recordings/wink/";
-	//file_path = "C:/FinalBackup/recordings/shifts/wink/";
+	file_path = "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/wink/";
+	//file_path = "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/shifts/wink/";
 
 	status=0;
 	files= read_directory(file_path);
@@ -1073,8 +1074,8 @@ void callTpc::process_vector(string filename){
 
 	}
 
-	file_path = "C:/FinalBackup/recordings/P/";
-	//file_path = "C:/FinalBackup/recordings/shifts/P/";
+	file_path = "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/P/";
+	//file_path = "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/shifts/P/";
 	
 	status=0;
 	files= read_directory(file_path);
@@ -1099,8 +1100,8 @@ void callTpc::process_vector(string filename){
 
 	}
 
-	file_path = "C:/FinalBackup/recordings/beugen/";
-	//file_path = "C:/FinalBackup/recordings/shifts/beugen/";
+	file_path = "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/beugen/";
+	//file_path = "/home/clement/Documents/Boulot/SPECS/dev/TPC/gestures/shifts/beugen/";
 
 	status=0;
 	files= read_directory(file_path);
@@ -1148,8 +1149,8 @@ void callTpc::process_vector(string filename){
 	//conceptualspace.save(pathname);
 
 
-	string pathname= "C:/FinalBackup/newdists/";
-	string cs_path = "C:/FinalBackup/newcs/";
+	string pathname= "/home/clement/Documents/Boulot/SPECS/dev/TPC/build/newdists/";
+	string cs_path = "/home/clement/Documents/Boulot/SPECS/dev/TPC/build/newcs/";
 	string shifts ="shifts_";
 	//pathname=pathname+shifts+filename;
 	pathname=pathname+filename;
