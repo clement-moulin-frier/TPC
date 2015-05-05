@@ -12,7 +12,11 @@
 #include <fstream>
 #define _USE_MATH_DEFINES
 #include <cmath>
-#include "dirent.h"
+#include <dirent.h>
+
+#ifndef WIN32
+    #include <sys/types.h>
+#endif
 
 /* absolute value of a */
 #define ABS(a) (((a)<0) ? -(a) : (a))
