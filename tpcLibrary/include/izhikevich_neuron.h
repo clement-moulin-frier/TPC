@@ -7,7 +7,7 @@
 #include <iostream>
 #include "Point3D.h"
 
-#define isnan(x) _isnan(x)
+//#define isnan(x) _isnan(x)
 
 using namespace std;
 
